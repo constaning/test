@@ -1,0 +1,30 @@
+
+#top{
+
+    background-color: paleturquoise;
+    font-size: 20px;
+    line-height: 70px;
+}
+#medinu{
+    padding-top: 100px;
+}
+form{
+    height: 350px;
+    background-color: #eee;
+    padding-top: 20px;
+
+}
+.form-group>input{
+    margin-top: 30px;
+}
+#button{
+    margin-top: 30px;
+
+}
+.button_style{
+   height: 30px;
+    border-radius: 15px;
+
+}
+
+

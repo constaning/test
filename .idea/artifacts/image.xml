@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="image">
+    <output-path>D:/image</output-path>
+    <root id="root" />
+  </artifact>
+</component>

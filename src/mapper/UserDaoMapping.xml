@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.dao.UserDao">
+    <sql id="uphone">
+            <if test="uphone!=null and uphone!=''"> uphone = #{uphone} and</if>
+    </sql>
+    <sql id="upassword">
+        <if test="upassword!=null and upassword!=''"> upassword = #{upassword} and</if>
+    </sql>
+    <select id="selectByNameAndPassword" resultType="Byte">
+        select uid from user
+        <trim prefix="where" suffixOverrides="and">
+            <include refid="uphone"/>
+            <include refid="upassword"/>
+        </trim>
+    </select>
+    <select id="selectByName" resultType="Byte">
+        select uid from user
+        <trim prefix="where" suffixOverrides="and">
+            <include refid="uphone"/>
+        </trim>
+    </select>
+</mapper>

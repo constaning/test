@@ -1,0 +1,13 @@
+#top{
+    height: 72px;
+    font-size: 36px;
+    line-height: 70px;
+    background-color: paleturquoise;
+}
+#middle{
+    height: 580px;
+    background-color: #985f0d;
+}
+#list_form{
+    margin-top: 20px;
+}
